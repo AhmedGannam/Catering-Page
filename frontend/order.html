@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Order - Delightful Catering Services</title>
+</head>
+<body class="bg-light-pattern min-h-screen">
+  <div class="container mx-auto px-4 py-8">
+    <div class="max-w-md mx-auto bg-white backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/20">
+      <h1 class="text-2xl font-bold text-rose-600 mb-6 text-center">Place Your Order</h1>
+      
+      <form id="orderForm" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-600 mb-1">Name</label>
+          <input type="text" class="w-full px-3 py-2 rounded-md border border-gray-200 focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all placeholder-gray-400" 
+                 placeholder="Your name" required>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-600 mb-1">Mobile Number</label>
+          <input type="tel" class="w-full px-3 py-2 rounded-md border border-gray-200 focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all placeholder-gray-400" 
+                 placeholder="Your mobile number" required>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-600 mb-1">Date</label>
+            <input type="date" class="w-full px-3 py-2 rounded-md border border-gray-200 focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-600 mb-1">People</label>
+            <input type="number" min="1" class="w-full px-3 py-2 rounded-md border border-gray-200 focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all" 
+                   placeholder="Number of guests">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-600 mb-1">Spice Level</label>
+          <select class="w-full px-3 py-2 rounded-md border border-gray-200 focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all">
+            <option value="">Select preference</option>
+            <option value="mild">Mild</option>
+            <option value="medium">Medium</option>
+            <option value="spicy">Spicy</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-600 mb-1">Special Requests</label>
+          <textarea class="w-full px-3 py-2 rounded-md border border-gray-200 focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition-all" 
+                    rows="3" placeholder="Any special requirements"></textarea>
+        </div>
+
+        <div class="flex gap-3 mt-6">
+          <button type="button" onclick="location.href='index.html'" 
+                  class="flex-1 py-2 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-md transition-colors font-medium">
+            Back
+          </button>
+          <button type="submit" 
+                  class="flex-1 py-2 px-4 bg-rose-600 hover:bg-rose-700 text-white rounded-md transition-colors font-medium shadow-sm">
+            Submit Order
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-light-pattern {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)),
+    url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.card-hover {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+}
+
+.text-gray-300 {
+  color: #4b5563;
+}
+
+.food-image {
+  @apply rounded-lg overflow-hidden h-48 mb-4;
+  aspect-ratio: 16/9; 
+}
+
+.food-image img {
+  @apply w-full h-full object-cover;
+}

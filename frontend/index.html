@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Delightful Catering Services</title>
+</head>
+<body class="bg-light-pattern min-h-screen text-gray-800">
+  <nav class="bg-white/80 backdrop-blur-md fixed w-full z-50 shadow-sm">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="text-3xl font-bold text-rose-600">
+        Delightful
+        <span class="text-gray-800">Catering</span>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenu" class="md:hidden p-2 text-gray-800">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+        </svg>
+      </button>
+  
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-6 text-gray-800">
+        <a href="#packages" class="hover:text-rose-600 transition-colors">Packages</a>
+        <a href="#contact" class="hover:text-rose-600 transition-colors">Contact</a>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobileNav" class="md:hidden absolute w-full bg-white/95 backdrop-blur-sm hidden">
+      <div class="px-4 py-3 space-y-4">
+        <a href="#packages" class="block text-gray-800 hover:text-rose-600">Packages</a>
+        <a href="#contact" class="block text-gray-800 hover:text-rose-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4 pt-24">
+    <!-- Hero Section -->
+    <section class="text-center py-20">
+      <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6 animate-float">
+        Experience the Art of
+        <span class="text-rose-500">Fine Catering</span>
+      </h1>
+      <p class="text-gray-800  text-lg font-bold max-w-2xl mx-auto mb-12">
+        Elevate your events with our exquisite culinary creations, crafted with passion and served with elegance.
+      </p>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">Our Premium Packages</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Package 1-->
+
+         <div class="bg-white/80 backdrop-blur-md rounded-xl p-6 card-hover flex flex-col min-h-[550px] shadow-sm hover:shadow-md transition-all">
+          <div class="food-image">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop" alt="Biryani Special">
+          </div>
+          <div class="flex-1 flex flex-col">
+          <div class="flex justify-between items-start mb-4 mt-2">
+            <h3 class="text-2xl font-bold text-rose-500">Biryani Delight</h3>
+            <span class="bg-rose-500 text-gray-100 px-4 py-1 rounded-full font-bold">₹220</span>
+          </div>
+          <ul class="text-gray-800 space-y-2 mb-6 ">
+            <li>• Hyderabadi Biryani</li>
+            <li>• Raita</li>
+            <li>• Salan</li>
+            <li>• Dessert</li>
+          </ul>
+          <button onclick="location.href='order.html'" class="w-full bg-rose-500 text-gray-100 py-3 rounded-lg font-bold hover:bg-rose-600 transition-colors">
+            Order Now
+          </button>
+          </div>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="bg-white/80 backdrop-blur-md rounded-xl p-6 card-hover flex flex-col min-h-[550px] shadow-sm hover:shadow-md transition-all">
+          <div class="food-image">
+            <img src="https://media.istockphoto.com/id/1934223102/photo/chicken-haleem-chicken-karahi-biryani-beef-nihari-curry-pakora-chanay-aloo-shimla-mirch-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=TRMnRKHpRVa2qVUJWf1CkV9RC4_Zzjwq2oW9XKUBb9M=" alt="Haleem and Rice">
+          </div>
+          <div class="flex-1 flex flex-col">
+          <div class="flex justify-between items-start mb-4 mt-2">
+            <h3 class="text-2xl font-bold text-rose-500">Classic Feast</h3>
+            <span class="bg-rose-500 text-gray-100 px-4 py-1 rounded-full font-bold ">₹170</span>
+          </div>
+          <ul class="text-gray-800 space-y-2 mb-6">
+            <li>• Signature Haleem</li>
+            <li>• Aromatic Rice</li>
+            <li>• Special pickle</li>
+            <li>• Dessert</li>
+          </ul>
+          <button onclick="location.href='order.html'" class="w-full bg-rose-500 text-gray-100 py-3 rounded-lg font-bold hover:bg-rose-600 transition-colors">
+            Order Now
+          </button>
+          </div>
+        </div>
+
+        <!-- Package 3-->
+
+        <div class="bg-white/80 backdrop-blur-md rounded-xl p-6 card-hover flex flex-col min-h-[550px] shadow-sm hover:shadow-md transition-all">
+          <div class="food-image">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Vegetarian Special">
+          </div>
+          <div class="flex-1 flex flex-col">
+          <div class="flex justify-between items-start mb-4 mt-2">
+            <h3 class="text-2xl font-bold text-rose-500">Veggie Paradise</h3>
+            <span class="bg-rose-500 text-gray-100 px-4 py-1 rounded-full font-bold">₹190</span>
+          </div>
+          <ul class="text-gray-800 space-y-2 mb-6">
+            <li>• Paneer Special</li>
+            <li>• Veg Biryani</li>
+            <li>• Assorted Breads</li>
+            <li>• Sweet Dish</li>
+          </ul>
+          <button onclick="location.href='order.html'" class="w-full bg-rose-500 text-gray-100 py-3 rounded-lg font-bold hover:bg-rose-600 transition-colors">
+            Order Now
+          </button>
+          </div>
+        </div>
+
+        <!-- Package 4 -->
+        <div class="bg-white/80 backdrop-blur-md rounded-xl p-6 card-hover flex flex-col min-h-[550px] shadow-sm hover:shadow-md transition-all">
+          <div class="food-image">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop" alt="Premium Package">
+          </div>
+          <div class="flex-1 flex flex-col">
+          <div class="flex justify-between items-start mb-4 mt-2">
+            <h3 class="text-2xl font-bold text-rose-500">Premium Delight</h3>
+            <span class="bg-rose-500 text-gray-100 px-4 py-1 rounded-full font-bold">₹220</span>
+          </div>
+          <ul class="text-gray-800 space-y-2 mb-6">
+            <li>• Signature Haleem</li>
+            <li>• Fragrant Rice</li>
+            <li>• Gourmet Dessert</li>
+          </ul>
+          <button onclick="location.href='order.html'" class="w-full bg-rose-500 text-gray-100 py-3 rounded-lg font-bold hover:bg-rose-600 transition-colors">
+            Order Now
+          </button>
+          </div>
+        </div>
+
+        <!-- Package 5 -->
+        <div class="bg-white/80 backdrop-blur-md rounded-xl p-6 card-hover flex flex-col min-h-[550px] shadow-sm hover:shadow-md transition-all">
+          <div class="food-image">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=800&auto=format&fit=crop" alt="Luxury Package">
+          </div>
+          <div class="flex-1 flex flex-col">
+           <div class="flex justify-between items-start mb-4 mt-2">
+            <h3 class="text-2xl font-bold text-rose-500">Royal Banquet</h3>
+            <span class="bg-rose-500 text-gray-100 px-4 py-1 rounded-full font-bold">₹325</span>
+           </div>
+          <ul class="text-gray-800 space-y-2 mb-6">
+            
+            <li>• Signature Curry</li>
+            <li>• Premium Rice</li>
+            <li>• Special Haleem</li>
+            <li>• Luxury Dessert</li>
+          </ul>
+          <button onclick="location.href='order.html'" class="w-full bg-rose-500 text-gray-100 py-3 rounded-lg font-bold hover:bg-rose-600 transition-colors">
+            Order Now
+          </button>
+          </div>
+        </div>
+
+        <!-- Package 6 -->
+        <div class="bg-white/80 backdrop-blur-md rounded-xl p-6 card-hover flex flex-col min-h-[550px] shadow-sm hover:shadow-md transition-all">
+          <div class="food-image">
+            <img src="https://plus.unsplash.com/premium_photo-1661310019346-4cb563a19aec?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2FiYWIlMjBmZXN0aXZhbHxlbnwwfHwwfHx8MA%3D%3D" alt="Kebab Special">
+          </div>
+          <div class="flex-1 flex flex-col">
+          <div class="flex justify-between items-start mb-4 mt-2">
+            <h3 class="text-2xl font-bold text-rose-500">Kebab Festival</h3>
+            <span class="bg-rose-500 text-gray-100 px-4 py-1  rounded-full font-bold">₹280</span>
+          </div>
+          <ul class="text-gray-800 space-y-2 mb-6">
+            <li>• Assorted Kebabs</li>
+            <li>• Rumali Roti</li>
+            <li>• Dal Makhani</li>
+            <li>• Dessert</li>
+          </ul>
+          <button onclick="location.href='order.html'" class="w-full bg-rose-500 text-gray-100 py-3 rounded-lg font-bold hover:bg-rose-600 transition-colors">
+            Order Now
+          </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
