@@ -4,8 +4,8 @@
 
 .bg-light-pattern {
   background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)),
-    url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop');
+  linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)),
+  url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
